@@ -1,0 +1,592 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+form {
+    all: unset; /* 全てのデフォルトスタイルをリセット */
+    display: block; /* 通常のブロック要素として表示 */
+    margin: 0; /* 外側のマージンをリセット */
+    padding: 0; /* 内側のパディングをリセット */
+    background: transparent; /* 背景色を透明にする */
+    border: none; /* ボーダーを削除 */
+    font: inherit; /* 親要素のフォントを引き継ぐ */
+}
+
+button {
+    all: unset;  /* 全てのデフォルトスタイルをリセット */
+    display: inline-block; /* 必要に応じて再設定（例えば、インライン要素に戻す） */
+    background: transparent; /* 背景を透明にする */
+    border: none; /* ボーダーを削除 */
+    padding: 0; /* パディングをゼロに */
+    font: inherit; /* 親要素のフォントを引き継ぐ */
+    cursor: pointer; /* カーソルをポインターに */
+}
+
+.section01 {
+    width: 100%;
+}
+
+.mainvisual {
+    width: 100%;
+    height: 720px;
+    position: relative;
+}
+
+.mainvisual__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.mainvisual__title {
+    height: 35px;
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translate(0, -50%); /* 自分の幅と高さの50%分移動 */
+    z-index: 2;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: 'Marcellus', sans-serif;
+    text-align: center;
+    letter-spacing: 4.5px;
+    line-height: 35px;
+}
+
+.mainvisual__product-container {
+    width: 24.2%;
+    height: auto;
+    position: absolute;
+    top: 37.7%;
+    left: 14.8%;
+    z-index: 2;
+}
+
+.mainvisual__product-container__name {
+    width: 301px;
+    height: 131px;
+    font-size: 50px;
+    font-family: 'Marcellus', sans-serif;
+    letter-spacing: 15px;
+    line-height: 65px;
+}
+
+.mainvisual__product-container__name h1 {
+    font-weight: normal;
+}
+
+.mainvisual__product-container__description {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: normal;
+    letter-spacing: 8px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cta {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;  /* 水平方向に中央揃え */
+    align-items: center;      /* 垂直方向に中央揃え */
+}
+
+.cta__container {
+    width: 83%;
+    height: 146px;
+    display: flex;
+    margin: 48px 0;
+    background-color:rgb(240,244,255);
+    gap: 1.6%;
+}
+
+.cta__container__title {
+    flex: 38;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+}
+
+.cta__container__product_name {
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.cta__container__price {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: normal;
+    margin-top: 4%;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+.cta__container__main {
+    flex: 79;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 4.7%;
+    margin-right: 7%;
+}
+
+.cta__container__main > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cta__container__main-button {
+    width: 100%;
+    height: 58px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 600;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.cta__container__main-button--blue {
+    background-color: rgb(70,196,219);
+}
+
+.cta__container__main-button--green {
+    background-color: rgb(93,213,171);
+}
+
+.section02 {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.section02__img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.section02__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section02__container {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.section02__container__inner {
+    width: 38.9%;
+    height: auto;
+    z-index: 2;
+    color: white;
+    margin-right: 4.5%;
+}
+
+.section02__container__inner__title {
+    width: 100%;
+    height: auto;
+    font-size: 38px;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.section02__container__inner__sub_title {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.section02__container__inner__description {
+    width: 91.8%;
+    height: auto;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 400;
+    line-height: 31px;  
+}
+
+.section03 {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews {
+    width:96.3%;
+    position: relative;
+    margin: 80px 0;
+}
+
+.reviews__container {
+    width: 127px;
+    height: auto;
+    margin: 0  auto;
+}
+
+.reviews__container__title {
+    width: 100%;
+    height: auto;
+    font-size: 45px;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+}
+
+.reviews__container__sub-title {
+    width: 100%;
+    height: auto;
+    padding-top: 8px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    padding-top: 40px;
+    gap: 3.4%;
+    align-items: center;
+}
+
+.carousel__inner {
+    width: 84.8%;
+    height: auto;
+    display: flex;
+    gap: 4%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.carousel__container-item {
+    flex: 0 0 30.6%; /* サイズを超える固定幅を指定 */
+    height: auto;
+    background-color: rgb(219,247,249);
+}
+
+.carousel__container-item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 100px;
+    margin: 40px auto 0;
+}
+
+.carousel__container__item__name {
+    width: 42px;
+    height: 21px;
+    margin: 8px auto 0;
+    font-size: 15px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+
+.carousel__container__item__text {
+    width: 89.3%;
+    height: auto;
+    margin: 16px auto 40px;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 400;
+    line-height: 27.5px
+}
+
+.carousel__button--left {
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    transform: translateY(-40px);
+}
+
+.carousel__button--right {
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    transform: translateY(-40px);
+}
+
+.carousel__arrow--left {
+    width: 100%;
+    height: auto;
+}
+
+.carousel__arrow--right {
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+.section04 {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgb(244,255,233),rgb(199,240,254));
+    padding: 40px 0;
+}
+
+.accodion__title {
+    width: 107px;
+    height: 58px;
+    font-size: 45px;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.accodion__sub-title {
+    width: 146px;
+    height: 29px;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 600;
+    margin: 8px auto 40px;
+}
+
+.accodion__container-item {
+    width: 600px;
+    height: auto;
+    margin: 0 auto 24px auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.accodion__container-item__question {
+    width: 100%;
+    height: auto;
+    padding: 24px 24px;
+    font-size: 15px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+.accodion__container-item__question::marker {
+    content: "";
+}
+
+.accodion__container-item__question span {
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'EB Garamond', sans-serif;
+}
+
+.accodion__container-item__question::after {
+    content: "▼";
+    margin-left: 9%
+}
+
+.accodion__container-item[open] summary::after {
+    content: "▲";   
+}
+
+.accodion__container-item__answer {
+    display: flex;
+    gap: 16px;
+    padding: 0 24px;
+}
+
+.accodion__container-item__answer__A {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'EB Garamond', sans-serif;
+}
+
+.accodion__container-item__answer__text {
+    height: auto;
+    font-size: 15px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 500;
+    padding-bottom: 24px;
+    line-height: 24px;
+}
+
+
+.dot-customize li button {
+    font-size: 0px;
+    width: 100%;
+}
+
+.dot-customize button::before {
+    content: '•'; /* 黒丸を表示 */
+    font-size: 20px; /* サイズを調整 */
+    color: #EEEEEE; /* 色を指定 */
+}
+
+.slick-active button::before {
+    content: '•'; /* 黒丸を表示 */
+    font-size: 20px; /* サイズを調整 */
+    color: #00AFBF; /* 色を指定 */
+}
+
+.dot-customize {
+    width: 100%;
+    height: auto;
+    list-style: disc; /* リストスタイルを指定（箇条書きの「・」） */
+    display: flex; /* 横並びにする場合 */
+    justify-content: center; /* 中央揃えにする */
+    gap: 4px;
+    padding-top: 24px;
+                  /* ドット間のスペースを設定 */
+}
+
+.dot-customize li {
+    width: 9px;
+    height: auto;
+}
+
+.dot-customize li::marker {
+    content: none; /* マーカーを消す */
+}
+
+.slick-list {
+    margin: 0 -20px;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+}
+
+.head_container {
+    width: 100%;
+    height: 104px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.head__top {
+    width: 100%;
+    height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.head__top a {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #0071CE;
+    display: block;
+    text-align: center;
+    box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.head__top a::before {
+    content: '↑';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 43px;
+}
+
+.head__wrapper {
+    width: 100%;
+    height: 104px;
+    background-color: #0071CE;
+}
+
+.head__bottom {
+    width: 100%;
+    height: 104px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head__title {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'Marcellus', sans-serif;
+    margin-left: 2.6%;
+    letter-spacing: 5px;
+}
+
+.head__information {
+    width: 28.6%;
+}
+
+.head__information ul{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.6%;
+}
+
+.head__information a {
+    font-size: 14px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: normal;
+}
+
+.head__copylight {
+    font-size: 14px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: normal;
+    margin-right: 2.6%;
+}
+
+
+

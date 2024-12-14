@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+    .section01 {
+        width: 100%;
+        height: 520px;
+    }
+
+    .mainvisual {
+        height: 450px;
+    }
+
+    .mainvisual__product-container {
+        width: 89%;
+        position: static;
+        margin: -32px auto 0 auto;
+
+    }
+
+    .mainvisual__product-container__name {
+        width: 72%;
+        height: auto;
+        font-size: 41px;
+        letter-spacing: 10px;
+        line-height: 51px;
+    }
+
+    .mainvisual__product-container__description {
+        font-size: 20px;
+        letter-spacing: 6px;
+        line-height: 32px;
+    }
+
+    .cta__container {
+        width: 91.7%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+        margin: 50px 0;
+        gap: 20px;
+    }
+
+    .cta__container__product_name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .cta__container__price {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+
+    .cta__container__main {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .cta__container__main > div {
+        width: 83.7%;
+        margin: 0 auto;
+    }
+
+    .section02 {
+        height: 680px;
+    }
+
+    .section02__container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0 2.2%;
+        top: 48px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .section02__container__inner__title {
+        font-size: 30px;
+        font-family: 'EB Garamond', sans-serif;
+        font-weight: 700;
+        line-height: 38px;
+    }
+
+    .section02__container__inner {
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        color: white;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .section02__container__inner__description {
+        width: 100%;
+        text-align: start;
+        margin-top: 20px;
+    }
+
+    .section03 {
+        width: 91.8%;
+    }
+
+    .carousel {
+        gap: 0px;
+    }
+    
+    .accodion__container-item {
+        width: 91.8%;
+    }
+
+    .head__wrapper {
+        height: auto
+    }
+
+    .head__bottom {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 0;
+        height: auto;
+    }
+
+    .head__information {
+        width: 85%;
+    }
+
+
+}
